@@ -1,0 +1,9 @@
+.DS_Store
+./src/.DS_Store
+./src/exp/.DS_Store
+./src/exp/basic/.DS_Store
+./src/exp/original/.DS_Store
+./src/exp/pokec/.DS_Store
+./src/exp/real_facebook/.DS_Store
+data
+bin
