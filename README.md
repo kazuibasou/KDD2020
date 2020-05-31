@@ -21,7 +21,7 @@ We have confirmed that our source codes work on the following environments.
 	mkdir data/exp
 	mkdir bin
 
-**(ii)** download [graph](https://www.dropbox.com/s/ttn1otryrt4rgku/graph.zip?dl=0) and unzip at `KDD2020/data`. 
+**(ii)** download [dataset](https://www.dropbox.com/s/ttn1otryrt4rgku/graph.zip?dl=0) and unzip at `KDD2020/data`. 
 
 **(iii)** execute the `make` command at `KDD2020/src` to make **14** executable files in `KDD2020/bin`. 
 
@@ -36,7 +36,7 @@ Finally, the structure of the directory is as follows:
 	    ├ pokec
 	    ├ real_facebook
 	├ data
-	  ├ graph
+	  ├ dataset
 	  ├ exp
 	├ bin
 
