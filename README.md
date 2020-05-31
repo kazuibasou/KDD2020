@@ -21,7 +21,7 @@ We have confirmed that our source codes work on the following environments.
 	mkdir data/exp
 	mkdir bin
 
-**(ii)** download [dataset](https://www.dropbox.com/s/ttn1otryrt4rgku/dataset.zip?dl=0) and unzip at `KDD2020/data`. 
+**(ii)** download [graph](https://www.dropbox.com/s/ttn1otryrt4rgku/graph.zip?dl=0) and unzip at `KDD2020/data`. 
 
 **(iii)** execute the `make` command at `KDD2020/src` to make **14** executable files in `KDD2020/bin`. 
 
@@ -36,19 +36,19 @@ Finally, the structure of the directory is as follows:
 	    ├ pokec
 	    ├ real_facebook
 	├ data
-	  ├ dataset
+	  ├ graph
 	  ├ exp
 	├ bin
 
 ## Usage
 Execute the corresponding command at  `KDD2020/bin` to run the desired experiment. An output file of each experimental result is made at `KDD2020/data/exp`. The command to run, output, arguments, command arguments, experimental settings of each experiment are as follows (14 experiments in total).
 
-### `./calc_alpha_p <dataset>`
-Return the coefficients *alpha_p* for specified values of *p* on a dataset. The coefficient *alpha_p* is defined in Theorem 4.6 in the paper. 
+### `./calc_alpha_p <graph>`
+Return the coefficients *alpha_p* of a target graph for specified values of *p*. The coefficient *alpha_p* is defined in Theorem 4.6 in the paper. 
 
 - **Arguments:**
 
-	- *dataset* - youtube, orkut, facebook, livejournal, or pokec 
+	- *graph* - youtube, orkut, facebook, livejournal, or pokec 
 
 - **Experimental settings:** 
 	
@@ -58,12 +58,12 @@ Return the coefficients *alpha_p* for specified values of *p* on a dataset. The 
 
 		./calc_alpha_p youtube
 
-### `./calc_degree_dist <dataset>`
-Return the cumulative degree distribution of a dataset.
+### `./calc_degree_dist <graph>`
+Return the cumulative degree distribution of a target graph.
 
 - **Arguments:**
 
-	- *dataset* - youtube, orkut, facebook, livejournal, or pokec 
+	- *graph* - youtube, orkut, facebook, livejournal, or pokec 
 
 - **Experimental settings:** 
 	
@@ -73,12 +73,12 @@ Return the cumulative degree distribution of a dataset.
 
 		./calc_degree_dist youtube
 
-### `./asm_size_estimation <dataset> <access model>`
-Return the NRMSEs of each size estimator for specified values of *p* in a specified access model on a dataset. 
+### `./asm_size_estimation <graph> <access model>`
+Return the NRMSEs of each size estimator for specified values of *p* in a specified access model on a target graph. 
 
 - **Arguments:**
 
-	- *dataset* - youtube, orkut, facebook, or livejournal
+	- *graph* - youtube, orkut, facebook, or livejournal
 	- *access model* – ideal or hidden
 
 - **Experimental settings:** 
@@ -92,12 +92,12 @@ Return the NRMSEs of each size estimator for specified values of *p* in a specif
 
 		./asm_size_estimation youtube ideal
 
-### `./asm_size_convergence <dataset>`
-Return the NRMSEs of the convergence value of each size estimator for specified values of *p* on a dataset.
+### `./asm_size_convergence <graph>`
+Return the NRMSEs of the convergence value of each size estimator for specified values of *p* on a target graph.
 
 - **Arguments:**
 
-	- *dataset* - youtube, orkut, facebook, or livejournal
+	- *graph* - youtube, orkut, facebook, or livejournal
 
 - **Experimental settings:** 
 	
@@ -108,12 +108,12 @@ Return the NRMSEs of the convergence value of each size estimator for specified 
 
 		./asm_size_convergence youtube
 
-### `./asm_aved_estimation <dataset> <access model>`
-Return the NRMSEs of each average degree estimator for specified values of $$p$$ in a specified access model on a dataset. 
+### `./asm_aved_estimation <graph> <access model>`
+Return the NRMSEs of each average degree estimator for specified values of $$p$$ in a specified access model on a target graph. 
 
 - **Arguments:**
 
-	- *dataset* - youtube, orkut, facebook, or livejournal
+	- *graph* - youtube, orkut, facebook, or livejournal
 	- *access model* – ideal or hidden
 
 - **Experimental settings:** 
@@ -126,12 +126,12 @@ Return the NRMSEs of each average degree estimator for specified values of $$p$$
 
 		./asm_aved_estimation youtube ideal
 
-### `./asm_aved_convergence  <dataset>`
-Return the NRMSEs of the convergence value of each average degree estimator for specified values of *p* on a dataset.
+### `./asm_aved_convergence  <graph>`
+Return the NRMSEs of the convergence value of each average degree estimator for specified values of *p* on a target graph.
 
 - **Arguments:**
 
-	- *dataset* - youtube, orkut, facebook, or livejournal
+	- *graph* - youtube, orkut, facebook, or livejournal
 
 - **Experimental settings:** 
 	
@@ -142,12 +142,12 @@ Return the NRMSEs of the convergence value of each average degree estimator for 
 
 		./asm_aved_convergence youtube
 
-### `./asm_hidden_compare <dataset>`
-Return the NRMSEs of the proposed size estimator and the proportions of queried nodes using each exact and proposed weighting method for specified values of *p* in the hidden privacy model on a dataset.
+### `./asm_hidden_compare <graph>`
+Return the NRMSEs of the proposed size estimator and the proportions of queried nodes using each exact and proposed weighting method for specified values of *p* in the hidden privacy model on a target graph.
 
 - **Arguments:**
 
-	- *dataset* - youtube, orkut, facebook, or livejournal
+	- *graph* - youtube, orkut, facebook, or livejournal
 
 - **Experimental settings:** 
 	
@@ -160,12 +160,12 @@ Return the NRMSEs of the proposed size estimator and the proportions of queried 
 
 		./asm_hidden_compare youtube
 
-### `./asm_public_clusters_size <dataset>`
-Return the relative sizes of the largest public-cluster and the average absolute sizes of isolated public-clusters for specified values of *p* on a dataset.
+### `./asm_public_clusters_size <graph>`
+Return the relative sizes of the largest public-cluster and the average absolute sizes of isolated public-clusters of a target graph for specified values of *p*.
 
 - **Arguments:**
 
-	- *dataset* - youtube, orkut, facebook, or livejournal
+	- *graph* - youtube, orkut, facebook, or livejournal
 
 - **Experimental settings:** 
 	
@@ -177,7 +177,7 @@ Return the relative sizes of the largest public-cluster and the average absolute
 		./asm_public_clusters_size youtube
 
 ### `./pokec_size_estimation <access model>`
-Return the NRMSEs of estimates of each size estimator for specified sample sizes on the Pokec dataset.
+Return the NRMSEs of estimates of each size estimator for specified sample sizes on the Pokec graph.
 
 - **Arguments:**
 
@@ -194,14 +194,14 @@ Return the NRMSEs of estimates of each size estimator for specified sample sizes
 		./pokec_size_estimation ideal
 
 ### `./pokec_size_convergence`
-Return the relative error of the convergence value of each size estimator on the Pokec dataset. 
+Return the relative error of the convergence value of each size estimator on the Pokec graph. 
 
 - **Experimental settings:** 
 	
 	- Nothing
 
 ### `./pokec_aved_estimation <access model>`
-Return the NRMSEs of estimates of each average degree estimator for specified sample sizes on the Pokec dataset.
+Return the NRMSEs of estimates of each average degree estimator for specified sample sizes on the Pokec graph.
 
 - **Arguments:**
 
@@ -217,21 +217,21 @@ Return the NRMSEs of estimates of each average degree estimator for specified sa
 		./pokec_aved_estimation ideal
 
 ### `./pokec_aved_convergence`
-Return the relative error of the convergence value of each average degree estimator on the Pokec dataset. 
+Return the relative error of the convergence value of each average degree estimator on the Pokec graph. 
 
 - **Experimental settings:** 
 	
 	- Nothing
 
 ### `./pokec_public_clusters_size`
-Return the relative size of the largest public-cluster and the average absolute size of the isolated public-clusters on the Pokec dataset.
+Return the relative size of the largest public-cluster and the average absolute size of the isolated public-clusters of the Pokec graph.
 
 - **Experimental settings:** 
 	
 	- Nothing
 
 ### `./real_facebook_estimation`
-Return the estimates of the size and average degree of Facebook obtained from the dataset of samples of real public Facebook users via random walk.
+Return the estimates of the size and average degree of Facebook obtained from the samples of real public Facebook users via random walk.
 
 - **Experimental settings:** 
 	
