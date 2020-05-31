@@ -43,12 +43,12 @@ Finally, the structure of the directory is as follows:
 ## Usage
 Execute the corresponding command at  `KDD2020/bin` to run the desired experiment. An output file of each experimental result is made at `KDD2020/data/exp`. The command to run, output, arguments, command arguments, experimental settings of each experiment are as follows (14 experiments in total).
 
-### `./calc_alpha_p <target dataset>`
-Return the coefficients *alpha_p* for specified values of *p* on a target dataset. The coefficient *alpha_p* is defined in Theorem 4.6 in the paper. 
+### `./calc_alpha_p <dataset>`
+Return the coefficients *alpha_p* for specified values of *p* on a dataset. The coefficient *alpha_p* is defined in Theorem 4.6 in the paper. 
 
 - **Arguments:**
 
-	- *target dataset* - youtube, orkut, facebook, livejournal, or pokec 
+	- *dataset* - youtube, orkut, facebook, livejournal, or pokec 
 
 - **Experimental settings:** 
 	
@@ -58,12 +58,12 @@ Return the coefficients *alpha_p* for specified values of *p* on a target datase
 
 		./calc_alpha_p youtube
 
-### `./calc_degree_dist <target dataset>`
-Return the cumulative degree distribution of a target dataset.
+### `./calc_degree_dist <dataset>`
+Return the cumulative degree distribution of a dataset.
 
 - **Arguments:**
 
-	- *target dataset* - youtube, orkut, facebook, livejournal, or pokec 
+	- *dataset* - youtube, orkut, facebook, livejournal, or pokec 
 
 - **Experimental settings:** 
 	
@@ -73,12 +73,12 @@ Return the cumulative degree distribution of a target dataset.
 
 		./calc_degree_dist youtube
 
-### `./asm_size_estimation <target dataset> <access model>`
-Return the NRMSEs of each size estimator for specified values of *p* in a specified access model on a target dataset. 
+### `./asm_size_estimation <dataset> <access model>`
+Return the NRMSEs of each size estimator for specified values of *p* in a specified access model on a dataset. 
 
 - **Arguments:**
 
-	- *target dataset* - youtube, orkut, facebook, or livejournal
+	- *dataset* - youtube, orkut, facebook, or livejournal
 	- *access model* – ideal or hidden
 
 - **Experimental settings:** 
@@ -92,12 +92,12 @@ Return the NRMSEs of each size estimator for specified values of *p* in a specif
 
 		./asm_size_estimation youtube ideal
 
-### `./asm_size_convergence <target dataset>`
-Return the NRMSEs of the convergence value of each size estimator for specified values of *p* on a target dataset.
+### `./asm_size_convergence <dataset>`
+Return the NRMSEs of the convergence value of each size estimator for specified values of *p* on a dataset.
 
 - **Arguments:**
 
-	- *target dataset* - youtube, orkut, facebook, or livejournal
+	- *dataset* - youtube, orkut, facebook, or livejournal
 
 - **Experimental settings:** 
 	
@@ -108,12 +108,12 @@ Return the NRMSEs of the convergence value of each size estimator for specified 
 
 		./asm_size_convergence youtube
 
-### `./asm_aved_estimation <target dataset> <access model>`
-Return the NRMSEs of each average degree estimator for specified values of $$p$$ in a specified access model on a target dataset. 
+### `./asm_aved_estimation <dataset> <access model>`
+Return the NRMSEs of each average degree estimator for specified values of $$p$$ in a specified access model on a dataset. 
 
 - **Arguments:**
 
-	- *target dataset* - youtube, orkut, facebook, or livejournal
+	- *dataset* - youtube, orkut, facebook, or livejournal
 	- *access model* – ideal or hidden
 
 - **Experimental settings:** 
@@ -126,12 +126,12 @@ Return the NRMSEs of each average degree estimator for specified values of $$p$$
 
 		./asm_aved_estimation youtube ideal
 
-### `./asm_aved_convergence  <target dataset>`
-Return the NRMSEs of the convergence value of each average degree estimator for specified values of *p* on a target dataset.
+### `./asm_aved_convergence  <dataset>`
+Return the NRMSEs of the convergence value of each average degree estimator for specified values of *p* on a dataset.
 
 - **Arguments:**
 
-	- *target dataset* - youtube, orkut, facebook, or livejournal
+	- *dataset* - youtube, orkut, facebook, or livejournal
 
 - **Experimental settings:** 
 	
@@ -142,12 +142,12 @@ Return the NRMSEs of the convergence value of each average degree estimator for 
 
 		./asm_aved_convergence youtube
 
-### `./asm_hidden_compare <target dataset>`
-Return the NRMSEs of the proposed size estimator and the proportions of queried nodes using each exact and proposed weighting method for specified values of *p* in the hidden privacy model on a target dataset.
+### `./asm_hidden_compare <dataset>`
+Return the NRMSEs of the proposed size estimator and the proportions of queried nodes using each exact and proposed weighting method for specified values of *p* in the hidden privacy model on a dataset.
 
 - **Arguments:**
 
-	- *target dataset* - youtube, orkut, facebook, or livejournal
+	- *dataset* - youtube, orkut, facebook, or livejournal
 
 - **Experimental settings:** 
 	
@@ -160,12 +160,12 @@ Return the NRMSEs of the proposed size estimator and the proportions of queried 
 
 		./asm_hidden_compare youtube
 
-### `./asm_public_clusters_size <target dataset>`
-Return the relative sizes of the largest public-cluster and the average absolute sizes of isolated public-clusters for specified values of *p* on a target dataset.
+### `./asm_public_clusters_size <dataset>`
+Return the relative sizes of the largest public-cluster and the average absolute sizes of isolated public-clusters for specified values of *p* on a dataset.
 
 - **Arguments:**
 
-	- *target dataset* - youtube, orkut, facebook, or livejournal
+	- *dataset* - youtube, orkut, facebook, or livejournal
 
 - **Experimental settings:** 
 	
