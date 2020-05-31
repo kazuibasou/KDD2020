@@ -4,7 +4,17 @@ Here we describe how to reproduce the experimental results shown in the paper, â
 This repository contains the source codes that were used to generate the experimental results in the paper. 
 All the source codes are implemented in C++. 
 
-## Setup
+## Requirements
+
+Require gcc Version 4.2.1 (or later).
+
+We have confirmed that our source codes work on the following environments.
+
+- Mac OS X 10.13.6
+- Ubuntu 16.04.3 LTS
+- Windows 10 Version 1903
+
+## Build
 **(i)** download this repository and then execute the following three commands at `KDD2020` in order.
 
 	mkdir data
