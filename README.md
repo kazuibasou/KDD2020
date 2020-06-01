@@ -238,7 +238,7 @@ Return the estimates of the size and average degree of Facebook obtained from th
 	- The threshold in size estimator is 2.5% of the sample size.
 
 ## Notes
-- All the experiments in the paper were conducted on a Linux server with Intel Xeon E5-2698 (2.20 GHz) CPU and 503 GB of main memory.
+- All the experimental results in the paper were generated on a Linux server with Intel Xeon E5-2698 (2.20 GHz) CPU and 503 GB of main memory.
 - Note that it took approximately two weeks to complete all the experiments with the original experimental settings: `asm_public_clusters_size` took approximately two weeks, and other experiments were completed within several days at most.
 - We can try various experimental settings by changing the corresponding parameters in `KDD2020/src/exp/exp.h`. However, we should be careful when changing the experimental settings, as the source codes are not implemented with exhaustive exception handling (e.g., assume that the value of *p* is implicitly between 0 and 1.).
 
