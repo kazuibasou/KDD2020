@@ -21,7 +21,7 @@ We have confirmed that our source codes work on the following environments.
 	mkdir data/exp
 	mkdir bin
 
-**(ii)** download [dataset](https://www.dropbox.com/s/ttn1otryrt4rgku/graph.zip?dl=0) and unzip at `KDD2020/data`. 
+**(ii)** download [dataset](https://www.dropbox.com/s/ttn1otryrt4rgku/graph.zip?dl=0) and unzip at `KDD2020/data`. We note the large data size (3GB).
 
 **(iii)** execute the `make` command at `KDD2020/src` to make **14** executable files in `KDD2020/bin`. 
 
@@ -29,16 +29,16 @@ Finally, the structure of the directory is as follows:
 
 	KDD2020
 	├ src
-	  ├ main
-	  ├ exp
-	    ├ statistics
-	    ├ asm
-	    ├ pokec
-	    ├ real_facebook
+	│ ├ main
+	│ └ exp
+	│   ├ statistics
+	│   ├ asm
+	│   ├ pokec
+	│   └ real_facebook
 	├ data
-	  ├ dataset
-	  ├ exp
-	├ bin
+	│  ├ dataset
+	│  └ exp
+	└ bin
 
 ## Usage
 Execute the corresponding command at  `KDD2020/bin` to run the desired experiment. An output file of each experimental result is made at `KDD2020/data/exp`. The command to run, output, arguments, command arguments, experimental settings of each experiment are as follows (14 experiments in total).
@@ -257,7 +257,7 @@ This source code is released under the MIT License, see LICENSE.txt.
 - Kazuki Nakajima (https://kazuibasou.github.io/index_en.html)
 - nakajima.k.an[at]m.titech.ac.jp
 
-(Last update: 2020/05/30)
+(Last update: 2020/06/08)
 
 
 
