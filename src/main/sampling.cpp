@@ -6,6 +6,7 @@
 #include "sampling.h"
 
 int RW(Graph &G, std::string model,const int samplesize,const int startnode,std::vector<SampledData> &samplinglist){
+	
 	//Random walk for the ideal model.
 	if(model == "ideal"){
 		int i = 0;
@@ -23,7 +24,7 @@ int RW(Graph &G, std::string model,const int samplesize,const int startnode,std:
 		}
 	}
 
-	//Random walk to approximate each public-degree for the hidden privacy model.
+	//Random walk with the proposed public-degree calculation for the hidden privacy model.
 	else if(model == "hidden"){
 		int i = 0;
 		int v = startnode;

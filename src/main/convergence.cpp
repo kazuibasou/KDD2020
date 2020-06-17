@@ -5,7 +5,7 @@
 #include "graph.h"
 #include "convergence.h"
 
-//Convergence values of size
+//Convergence values of size estimators
 int size_convergences(Graph &G, PublicCluster &LPC, std::vector<double> &convergences){
 	double pubd,d;
 	double a = 0.0; double b = 0.0;
@@ -24,6 +24,7 @@ int size_convergences(Graph &G, PublicCluster &LPC, std::vector<double> &converg
 	return 0;
 }
 
+//Convergence values of average degree estimators
 int average_degree_convergences(Graph &G, PublicCluster &LPC, std::vector<double> &convergences){
 	double a = 0.0;
 	for(int v:LPC.V){

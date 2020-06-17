@@ -9,6 +9,7 @@
 #include <stdlib.h>
 #include "graph.h"
 
+//Sampled data for node v
 SampledData::SampledData(const int v){
 	index = v;
 	ndata = std::vector<int>();
@@ -21,6 +22,7 @@ SampledData::~SampledData(){
 	std::vector<int>().swap(ndata);
 }
 
+//Query node v
 SampledData Graph::Query(std::string model, const int v){
 	SampledData data(v);
 	if(privacy[v] == 0){
@@ -46,6 +48,7 @@ SampledData Graph::Query(std::string model, const int v){
 	return data;
 }
 
+//graph structure
 Graph::Graph(){
 	N = 0;
 	M = 0;
@@ -60,6 +63,7 @@ Graph::~Graph(){
 	std::vector<int>().swap(privacy);
 }
 
+//connected subgraphs that consist of public nodes on graph
 PublicCluster::PublicCluster(const Graph &G){
 	N = 0;
 	M = 0;
@@ -71,7 +75,7 @@ PublicCluster::~PublicCluster(){
 	std::vector<int>().swap(V);
 	std::vector<std::vector<int> >().swap(nlist);
 }
-//for dataset based on assumption that each node inndepedently becomes private with probability p.
+//read edge list of groph based on assumption that each node inndepedently becomes private with probability p.
 int Graph::readgraph(const char *graphdatafile,const char *readgraph){
 	FILE *gf;
 	const char *dir = "../data/dataset/";
@@ -132,7 +136,7 @@ int Graph::readgraph(const char *graphdatafile,const char *readgraph){
 
 	return 0;
 }
-//for pokec dataset
+//read edge list of pokec graph
 int Graph::readpokec(const char *graphdatafile,const char *readgraph){
 	FILE *gf;
 	const char *dir = "../data/dataset/";
@@ -206,6 +210,7 @@ int Graph::readpokec(const char *graphdatafile,const char *readgraph){
 	return 0;
 }
 
+//Return a random integer from 0 to N-1
 int generate_rand(const int N){
 	if(N == 0){
 		printf("Error: Given integer is zero.\n");
@@ -218,6 +223,7 @@ int generate_rand(const int N){
     return randN(mt);
 }
 
+//Return a random real number from 0.0 to 1.0
 double generate_uniform_rand(){
 	std::random_device rd;
     std::mt19937 mt(rd());
@@ -226,6 +232,7 @@ double generate_uniform_rand(){
     return uniformrand(mt);
 }
 
+//Return a random real number from a to b
 double generate_uniform_rand_with_range(const double a,const double b){
 	std::random_device rd;
     std::mt19937 mt(rd());
@@ -234,6 +241,7 @@ double generate_uniform_rand_with_range(const double a,const double b){
     return uniformrand(mt);
 }
 
+//Return the NRMSE obtained from estimate list
 double calc_NRMSE(const std::vector<double> &estimations,const double exact){
 	double nrmse = 0.0;
 	int n = estimations.size();
@@ -250,6 +258,7 @@ double calc_NRMSE(const std::vector<double> &estimations,const double exact){
 	return nrmse;
 }
 
+//Set privacy labels of all nodes
 int Graph::set_privacy_labels(const double p){
 	privacy = std::vector<int>(N,0);
 	double r;
@@ -264,6 +273,7 @@ int Graph::set_privacy_labels(const double p){
 	return 0;
 }
 
+//Return the largest public cluster of a graph with privacy labels
 PublicCluster return_LPC(Graph &G){
 	int i = 0;
 	int j;
@@ -318,6 +328,7 @@ PublicCluster return_LPC(Graph &G){
 	return LPC;
 }
 
+//Select a seed of a random walk
 int select_seed(PublicCluster LPC){
 	int index = generate_rand(LPC.N);
 	

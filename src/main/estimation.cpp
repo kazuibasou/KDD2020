@@ -7,7 +7,7 @@
 #include "sampling.h"
 #include "estimation.h"
 
-//Size estimator
+//Size estimators
 int Size_estimations(std::vector<SampledData> &samplinglist, const double ratio_m_r, std::vector<double> &estimations){
 	int r = samplinglist.size();
 	int k,l,v_k,v_l;
@@ -43,7 +43,7 @@ int Size_estimations(std::vector<SampledData> &samplinglist, const double ratio_
 	return 0;
 }
 
-//Average degree estimator.
+//Average degree estimators
 int Average_degree_estimations(std::vector<SampledData> &samplinglist,std::vector<double> &estimations){
 
 	//estimation0: naive weighting
