@@ -1,14 +1,14 @@
 # Estimating Properties of Social Networks via Random Walk considering Private Nodes
 
 Here we describe how to reproduce the experimental results shown in the paper, “Estimating Properties of Social Networks via Random Walk considering Private Nodes”, accepted to *KDD2020 (full paper)*. 
-This repository contains the source codes that were used to generate the experimental results in the paper. 
-All the source codes are implemented in C++. 
+This repository contains the source code that were used to generate the experimental results in the paper. 
+All the source code are implemented in C++. 
 
 ## Requirements
 
 Require gcc Version 4.2.1 (or later).
 
-We have confirmed that our source codes work on the following environments.
+We have confirmed that our source code works on the following environments.
 
 - Mac OS X 10.13.6
 - Ubuntu 16.04.3 LTS
@@ -240,7 +240,7 @@ Return the estimates of the size and average degree of Facebook obtained from th
 ## Notes
 - All the experimental results in the paper were generated on a Linux server with Intel Xeon E5-2698 (2.20 GHz) CPU and 503 GB of main memory.
 - Note that it took approximately two weeks to complete all the experiments with the original experimental settings: `asm_public_clusters_size` took approximately two weeks, and other experiments were completed within several days at most.
-- We can try various experimental settings by changing the corresponding parameters in `KDD2020/src/exp/exp.h`. However, we should be careful when changing the experimental settings, as the source codes are not implemented with exhaustive exception handling (e.g., assume that the value of *p* is implicitly between 0 and 1.).
+- We can try various experimental settings by changing the corresponding parameters in `KDD2020/src/exp/exp.h`. However, we should be careful when changing the experimental settings, as the source code is not implemented with exhaustive exception handling (e.g., assume that the value of *p* is implicitly between 0 and 1.).
 
 
 ## Reference
@@ -257,7 +257,7 @@ This source code is released under the MIT License, see LICENSE.txt.
 - Kazuki Nakajima (https://kazuibasou.github.io/index_en.html)
 - nakajima.k.an[at]m.titech.ac.jp
 
-(Last update: 2020/06/08)
+(Last update: 2020/06/18)
 
 
 
