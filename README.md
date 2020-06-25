@@ -1,6 +1,6 @@
 # Estimating Properties of Social Networks via Random Walk considering Private Nodes
 
-Here we describe how to reproduce the experimental results shown in the paper, “Estimating Properties of Social Networks via Random Walk considering Private Nodes”, accepted to *KDD2020 (full paper)* [<a href="https://kazuibasou.github.io/papers/KDD2020.pdf">paper (draft)</a>], [<a href="https://arxiv.org/abs/2006.12196">arXiv</a>]. 
+Here we describe how to reproduce the experimental results shown in the paper, “Estimating Properties of Social Networks via Random Walk considering Private Nodes”, accepted to *KDD2020 (full paper)* [<a href="https://kazuibasou.github.io/papers/KDD2020.pdf">paper (draft)</a>] [<a href="https://arxiv.org/abs/2006.12196">arXiv</a>]. 
 This repository contains the source code that were used to generate the experimental results in the paper. 
 All the source code are implemented in C++. 
 
@@ -245,7 +245,7 @@ Return the estimates of the size and average degree of Facebook obtained from th
 
 ## Reference
 
-Kazuki Nakajima, Kazuyuki Shudo. “Estimating Properties of Social Networks via Random Walk considering Private Nodes”, *The 26th ACM SIGKDD International Conference on Knowledge Discovery & Data Mining ([KDD 2020](https://www.kdd.org/kdd2020/))*, August 2020 (to appear). [<a href="https://kazuibasou.github.io/papers/KDD2020.pdf">paper (draft)</a>], [<a href="https://arxiv.org/abs/2006.12196">arXiv</a>]
+Kazuki Nakajima, Kazuyuki Shudo. “Estimating Properties of Social Networks via Random Walk considering Private Nodes”, *The 26th ACM SIGKDD International Conference on Knowledge Discovery & Data Mining ([KDD 2020](https://www.kdd.org/kdd2020/))*, August 2020 (to appear). [<a href="https://kazuibasou.github.io/papers/KDD2020.pdf">paper (draft)</a>] [<a href="https://arxiv.org/abs/2006.12196">arXiv</a>]
 
 
 ## License
