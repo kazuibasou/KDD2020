@@ -1,6 +1,6 @@
 # Estimating Properties of Social Networks via Random Walk considering Private Nodes
 
-Here we describe how to reproduce the experimental results shown in the paper, “Estimating Properties of Social Networks via Random Walk considering Private Nodes”, accepted to *[KDD 2020](https://www.kdd.org/kdd2020/) (full paper)* [<a href="https://kazuibasou.github.io/papers/KDD2020.pdf">paper (draft)</a>] [<a href="https://arxiv.org/abs/2006.12196">arXiv</a>]. 
+Here we describe how to reproduce the experimental results shown in the paper, “Estimating Properties of Social Networks via Random Walk considering Private Nodes”, published in *[KDD 2020](https://www.kdd.org/kdd2020/)* [<a href="https://dl.acm.org/doi/10.1145/3394486.3403116">paper</a>] [<a href="https://kazuibasou.github.io/papers/KDD2020.pdf">paper (draft)</a>] [<a href="https://arxiv.org/abs/2006.12196">arXiv</a>]. 
 This repository contains the source code that were used to generate the experimental results in the paper. 
 All the source code are implemented in C++. 
 
@@ -245,19 +245,23 @@ Return the estimates of the size and average degree of Facebook obtained from th
 
 ## Reference
 
-Kazuki Nakajima, Kazuyuki Shudo. “Estimating Properties of Social Networks via Random Walk considering Private Nodes”, *The 26th ACM SIGKDD International Conference on Knowledge Discovery & Data Mining ([KDD 2020](https://www.kdd.org/kdd2020/))*, August 2020 (to appear). [<a href="https://kazuibasou.github.io/papers/KDD2020.pdf">paper (draft)</a>] [<a href="https://arxiv.org/abs/2006.12196">arXiv</a>]
-
+		@inproceedings{private-nodes-kdd2020,
+			title={Estimating Properties of Social Networks via Random Walk considering Private Nodes},
+			author={Nakajima, Kazuki and Shudo, Kazuyuki},
+			booktitle={Proceedings of the 26th ACM SIGKDD International Conference on Knowledge Discovery \& Data Mining},
+			pages={720--730},
+			year={2020}
+		}
 
 ## License
 
 This source code is released under the MIT License, see LICENSE.txt.
 
-
 ## Contact
 - Kazuki Nakajima (https://kazuibasou.github.io/index_en.html)
 - nakajima.k.an[at]m.titech.ac.jp
 
-(Last update: 2020/06/25)
+(Last update: 2020/09/12)
 
 
 
