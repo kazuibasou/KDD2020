@@ -245,13 +245,13 @@ Return the estimates of the size and average degree of Facebook obtained from th
 
 ## Reference
 
-		@inproceedings{private-nodes-kdd2020,
-			title={Estimating Properties of Social Networks via Random Walk considering Private Nodes},
-			author={Nakajima, Kazuki and Shudo, Kazuyuki},
-			booktitle={Proceedings of the 26th ACM SIGKDD International Conference on Knowledge Discovery \& Data Mining},
-			pages={720--730},
-			year={2020}
-		}
+	@inproceedings{private-nodes-kdd2020,
+		title={Estimating Properties of Social Networks via Random Walk considering Private Nodes},
+		author={Nakajima, Kazuki and Shudo, Kazuyuki},
+		booktitle={Proceedings of the 26th ACM SIGKDD International Conference on Knowledge Discovery \& Data Mining},
+		pages={720--730},
+		year={2020}
+	}
 
 ## License
 
